@@ -51,8 +51,10 @@ export const BLACKJACK_RULES = {
   ACE_SOFT_VALUE: 1,
   ACE_HARD_VALUE: 11,
   BLACKJACK_PAYOUT: 1.5,
-  WIN_PAYOUT: 1,
-  PUSH_PAYOUT: 0
+  // Regular win should pay 2x the stake (player receives stake * 2)
+  WIN_PAYOUT: 2,
+  // Push (tie) should return the original stake
+  PUSH_PAYOUT: 1
 }
 
 export const BLACKJACK_GAME_STATES = {
