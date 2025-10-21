@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .slot-machine {
+    margin: 0 5px;
+    max-width: 95%;
+  }
+  
+  .slot-machine h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slot-machine {
+    margin: 0 2px;
+    max-width: 98%;
+  }
+  
+  .slot-machine h2 {
+    font-size: 1.5rem;
+  }
+}

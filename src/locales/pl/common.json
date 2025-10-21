@@ -1,0 +1,144 @@
+{
+  "header": {
+    "wallet": "Kasa",
+    "bet": "Stawka",
+    "legend": "📖 Legenda",
+    "language": "Język"
+  },
+  "home": {
+    "title": "🎰 NeonCasino 🎰",
+    "subtitle": "Wybierz grę i zacznij grać!",
+    "goodLuck": "🎲 Powodzenia i dobrej zabawy! 🎲",
+    "moreGamesComing": "🎮 Więcej Gier Już Wkrótce! 🎮",
+    "moreGamesDescription": "Pracujemy nad dodaniem więcej ekscytujących gier kasynowych. Czekajcie na więcej gier już wkrótce!",
+    "games": {
+      "slotMachine": {
+        "title": "🎰 Maszyna do Gry",
+        "description": "Klasyczna maszyna 3x3 z wieloma kombinacjami wygrywającymi"
+      },
+      "blackjack": {
+        "title": "🃏 Blackjack",
+        "description": "Zdobądź jak najbliżej 21 bez przekroczenia!"
+      },
+      "roulette": {
+        "title": "🎲 Ruletka",
+        "description": "Postaw na czerwone, czarne lub zielone i zakręć!"
+      },
+      "poker": {
+        "title": "🀄 Poker",
+        "description": "Wkrótce - Texas Hold'em poker"
+      },
+      "comingSoon": "Wkrótce"
+    }
+  },
+  "game": {
+    "spin": "ZAKRĘĆ",
+    "spinning": "KRĘCENIE...",
+    "win": "WYGRANA",
+    "backToGames": "← Powrót do Gier",
+    "legend": "📖 Legenda",
+    "noMoney": "Nie masz wystarczająco kasy na zakręcenie!",
+    "notFound": "Gra nie znaleziona",
+    "notFoundDescription": "Żądana gra nie istnieje."
+  },
+  "legend": {
+    "title": "📖 Legenda Symboli",
+    "symbolValues": "🎯 Wartości Symboli",
+    "winningPatterns": "🏆 Układy Wygrywające",
+    "gameRules": "📋 Zasady Gry"
+  },
+  "symbols": {
+    "cherry": "Wiśnia",
+    "lemon": "Cytryna",
+    "orange": "Pomarańcza",
+    "grape": "Winogrono",
+    "star": "Gwiazda",
+    "diamond": "Diament",
+    "seven": "Siódemka",
+    "bell": "Dzwonek"
+  },
+  "descriptions": {
+    "lowestValue": "Najniższa wartość",
+    "lowValue": "Niska wartość",
+    "mediumValue": "Średnia wartość",
+    "goodValue": "Dobra wartość",
+    "highValue": "Wysoka wartość",
+    "veryHighValue": "Bardzo wysoka wartość",
+    "highestValue": "Najwyższa wartość"
+  },
+  "patterns": {
+    "horizontalLine": "Linia Pozioma",
+    "verticalLine": "Linia Pionowa",
+    "diagonal": "Przekątna",
+    "threeIdentical": "3 identyczne symbole w rzędzie",
+    "threeIdenticalColumn": "3 identyczne symbole w kolumnie",
+    "threeIdenticalDiagonal": "3 identyczne symbole po przekątnej (PODWÓJNA WYGRANA!)"
+  },
+  "rules": {
+    "winFormula": "Wygrana = Stawka × Mnożnik Symbolu",
+    "diagonalDouble": "Przekątne dają podwójną wygraną",
+    "multipleLines": "Można wygrać na wielu liniach jednocześnie",
+    "highestSymbol": "Najwyższa wartość: 7️⃣ (x25)",
+    "lowestSymbol": "Najniższa wartość: 🍒 (x2)"
+  },
+  "roulette": {
+    "title": "Ruletka",
+    "description": "Zakręć kołem fortuny i wygraj!",
+    "spin": "ZAKRĘĆ",
+    "spinning": "KRĘCENIE...",
+    "win": "WYGRANA",
+    "winningNumber": "Wygrywająca liczba",
+    "rules": "Zasady gry",
+    "redNumbers": "Liczby czerwone",
+    "blackNumbers": "Liczby czarne",
+    "greenZero": "Zielone zero",
+    "betOn": "Stawka na:",
+    "red": "Czerwone",
+    "black": "Czarne",
+    "green": "Zielone",
+    "bettingOn": "Stawiasz na",
+    "betAmount": "Kwota stawki"
+  },
+  "blackjack": {
+    "title": "Blackjack",
+    "description": "Zdobądź jak najbliżej 21 bez przekroczenia!",
+    "deal": "ROZDANIE",
+    "hit": "DOBIERZ",
+    "stand": "ZOSTAŃ",
+    "newGame": "NOWA GRA",
+    "dealer": "Krupier",
+    "player": "Gracz",
+    "blackjack": "BLACKJACK!",
+    "bust": "PRZEKROCZENIE!",
+    "win": "WYGRYWASZ!",
+    "lose": "PRZEGRYWASZ!",
+    "push": "REMIS!",
+    "dealerBust": "Krupier przekroczył!",
+    "dealerBlackjack": "Krupier ma blackjack!",
+    "playerBlackjack": "Masz blackjack!",
+    "rules": "Zasady Gry",
+    "rule1": "Zdobądź jak najbliżej 21 bez przekroczenia",
+    "rule2": "Figury (J, Q, K) są warte 10 punktów",
+    "rule3": "Asy są warte 1 lub 11 punktów",
+    "rule4": "Krupier musi dobrać na 16 i zostać na 17",
+    "rule5": "Blackjack płaci 3:2, zwykła wygrana 1:1",
+    "bustMessage": "Przekroczenie! Przegrywasz.",
+    "blackjackMessage": "Blackjack! Wygrywasz!",
+    "winMessage": "Wygrywasz!",
+    "loseMessage": "Przegrywasz!",
+    "pushMessage": "Remis! Jest remis.",
+    "cardValues": "Wartości Kart",
+    "aceValue": "As = 1 lub 11 punktów",
+    "numberCards": "Karty numeryczne = wartość nominalna",
+    "faceCards": "Figury = 10 punktów",
+    "payouts": "Płatności",
+    "blackjackPayout": "3:2 (150%)",
+    "blackjackDesc": "21 z dwoma kartami",
+    "winPayout": "1:1 (100%)",
+    "winDesc": "Więcej niż krupier",
+    "pushPayout": "0:1 (0%)",
+    "pushDesc": "Zwrot stawki",
+    "bustPayout": "-100%",
+    "bustDesc": "Przekroczenie 21"
+  }
+}

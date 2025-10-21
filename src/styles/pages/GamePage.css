@@ -1,0 +1,140 @@
+.game-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  border: 3px solid #FFD700;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.game-header h1 {
+  color: #FFD700;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  flex: 1;
+  text-align: center;
+}
+
+.back-button, .legend-button {
+  background: linear-gradient(145deg, #DC143C, #8B0000);
+  border: 2px solid #FFD700;
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover, .legend-button:hover {
+  background: linear-gradient(145deg, #FF1744, #B71C1C);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.game-content {
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  border: 3px solid #FFD700;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slot-machine-container {
+  text-align: center;
+}
+
+.bet-controls-game {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.bet-controls-game label {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.bet-input-game {
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  transition: all 0.3s ease;
+}
+
+.bet-input-game:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.bet-input-game:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.game-not-found {
+  text-align: center;
+  padding: 40px;
+}
+
+.game-not-found h2 {
+  color: #FF6B6B;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.game-not-found p {
+  color: #E0E0E0;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.game-not-found button {
+  background: linear-gradient(145deg, #DC143C, #8B0000);
+  border: 2px solid #FFD700;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-not-found button:hover {
+  background: linear-gradient(145deg, #FF1744, #B71C1C);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.roulette-container-page {
+  max-width: 600px;
+  margin: 0 auto;
+}

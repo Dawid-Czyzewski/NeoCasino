@@ -1,0 +1,31 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .game-page {
+    padding: 18px;
+  }
+  
+  .game-header {
+    padding: 18px;
+  }
+  
+  .game-header h1 {
+    font-size: 1.9rem;
+  }
+  
+  .back-button, .legend-button {
+    font-size: 0.95rem;
+    padding: 9px 18px;
+  }
+  
+  .game-content {
+    padding: 25px;
+  }
+  
+  .bet-controls-game label {
+    font-size: 1.15rem;
+  }
+  
+  .bet-input-game {
+    font-size: 1.05rem;
+    width: 110px;
+  }
+}

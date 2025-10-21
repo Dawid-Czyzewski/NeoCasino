@@ -1,0 +1,144 @@
+{
+  "header": {
+    "wallet": "Wallet",
+    "bet": "Bet",
+    "legend": "📖 Legend",
+    "language": "Language"
+  },
+  "home": {
+    "title": "🎰 NeonCasino 🎰",
+    "subtitle": "Choose your game and start playing!",
+    "goodLuck": "🎲 Good luck and have fun! 🎲",
+    "moreGamesComing": "🎮 More Games Coming Soon! 🎮",
+    "moreGamesDescription": "We're working on adding more exciting casino games. Stay tuned for more games coming soon!",
+    "games": {
+      "slotMachine": {
+        "title": "🎰 Slot Machine",
+        "description": "Classic 3x3 slot machine with multiple winning combinations"
+      },
+      "blackjack": {
+        "title": "🃏 Blackjack",
+        "description": "Get as close to 21 as possible without going over!"
+      },
+      "roulette": {
+        "title": "🎲 Roulette",
+        "description": "Bet on red, black or green and spin to win!"
+      },
+      "poker": {
+        "title": "🀄 Poker",
+        "description": "Coming Soon - Texas Hold'em poker"
+      },
+      "comingSoon": "Coming Soon"
+    }
+  },
+  "game": {
+    "spin": "SPIN",
+    "spinning": "SPINNING...",
+    "win": "WIN",
+    "backToGames": "← Back to Games",
+    "legend": "📖 Legend",
+    "noMoney": "You don't have enough money to spin!",
+    "notFound": "Game not found",
+    "notFoundDescription": "The requested game does not exist."
+  },
+  "legend": {
+    "title": "📖 Symbol Legend",
+    "symbolValues": "🎯 Symbol Values",
+    "winningPatterns": "🏆 Winning Patterns",
+    "gameRules": "📋 Game Rules"
+  },
+  "symbols": {
+    "cherry": "Cherry",
+    "lemon": "Lemon",
+    "orange": "Orange",
+    "grape": "Grape",
+    "star": "Star",
+    "diamond": "Diamond",
+    "seven": "Seven",
+    "bell": "Bell"
+  },
+  "descriptions": {
+    "lowestValue": "Lowest value",
+    "lowValue": "Low value",
+    "mediumValue": "Medium value",
+    "goodValue": "Good value",
+    "highValue": "High value",
+    "veryHighValue": "Very high value",
+    "highestValue": "Highest value"
+  },
+  "patterns": {
+    "horizontalLine": "Horizontal Line",
+    "verticalLine": "Vertical Line",
+    "diagonal": "Diagonal",
+    "threeIdentical": "3 identical symbols in a row",
+    "threeIdenticalColumn": "3 identical symbols in a column",
+    "threeIdenticalDiagonal": "3 identical symbols diagonally (DOUBLE WIN!)"
+  },
+  "rules": {
+    "winFormula": "Win = Bet × Symbol Multiplier",
+    "diagonalDouble": "Diagonals give double win",
+    "multipleLines": "You can win on multiple lines simultaneously",
+    "highestSymbol": "Highest value: 7️⃣ (x25)",
+    "lowestSymbol": "Lowest value: 🍒 (x2)"
+  },
+  "roulette": {
+    "title": "Roulette",
+    "description": "Spin the wheel of fortune and win!",
+    "spin": "SPIN",
+    "spinning": "SPINNING...",
+    "win": "WIN",
+    "winningNumber": "Winning number",
+    "rules": "Game rules",
+    "redNumbers": "Red numbers",
+    "blackNumbers": "Black numbers",
+    "greenZero": "Green zero",
+    "betOn": "Bet on:",
+    "red": "Red",
+    "black": "Black",
+    "green": "Green",
+    "bettingOn": "Betting on",
+    "betAmount": "Bet amount"
+  },
+  "blackjack": {
+    "title": "Blackjack",
+    "description": "Get as close to 21 as possible without going over!",
+    "deal": "DEAL",
+    "hit": "HIT",
+    "stand": "STAND",
+    "newGame": "NEW GAME",
+    "dealer": "Dealer",
+    "player": "Player",
+    "blackjack": "BLACKJACK!",
+    "bust": "BUST!",
+    "win": "YOU WIN!",
+    "lose": "YOU LOSE!",
+    "push": "PUSH!",
+    "dealerBust": "Dealer busts!",
+    "dealerBlackjack": "Dealer has blackjack!",
+    "playerBlackjack": "You have blackjack!",
+    "rules": "Game Rules",
+    "rule1": "Get as close to 21 as possible without going over",
+    "rule2": "Face cards (J, Q, K) are worth 10 points",
+    "rule3": "Aces are worth 1 or 11 points",
+    "rule4": "Dealer must hit on 16 and stand on 17",
+    "rule5": "Blackjack pays 3:2, regular win pays 1:1",
+    "bustMessage": "Bust! You lose.",
+    "blackjackMessage": "Blackjack! You win!",
+    "winMessage": "You win!",
+    "loseMessage": "You lose!",
+    "pushMessage": "Push! It's a tie.",
+    "cardValues": "Card Values",
+    "aceValue": "Ace = 1 or 11 points",
+    "numberCards": "Number cards = face value",
+    "faceCards": "Face cards = 10 points",
+    "payouts": "Payouts",
+    "blackjackPayout": "3:2 (150%)",
+    "blackjackDesc": "21 with two cards",
+    "winPayout": "1:1 (100%)",
+    "winDesc": "Higher than dealer",
+    "pushPayout": "0:1 (0%)",
+    "pushDesc": "Bet returned",
+    "bustPayout": "-100%",
+    "bustDesc": "Over 21"
+  }
+}

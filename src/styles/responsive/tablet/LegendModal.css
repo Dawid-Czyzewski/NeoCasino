@@ -1,0 +1,22 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal-content {
+    padding: 25px;
+    margin: 15px;
+  }
+  
+  .modal-title {
+    font-size: 1.6rem;
+  }
+  
+  .symbols-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .winning-patterns {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  .symbol-icon {
+    font-size: 2.2rem;
+  }
+}

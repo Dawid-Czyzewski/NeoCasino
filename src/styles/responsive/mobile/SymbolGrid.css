@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  .symbol-grid {
+    gap: 6px;
+    padding: 12px;
+  }
+  
+  .symbol-tile {
+    font-size: 1.6rem;
+  }
+  
+  .grid {
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .symbol-container {
+    aspect-ratio: 1/0.7;
+    padding: 6px;
+    min-height: 50px;
+  }
+  
+  .symbol-container.spinning-tile {
+    animation: slotMachineSpin 0.15s linear infinite;
+  }
+  
+  .spinning-column {
+    animation: slotMachineSpin 0.15s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .symbol-tile {
+    font-size: 0.8rem;
+  }
+  
+  .symbol {
+    font-size: 0.8rem;
+  }
+  
+  .symbol-container {
+    aspect-ratio: 1/0.7;
+    padding: 3px;
+    min-height: 35px;
+  }
+  
+  .grid {
+    gap: 3px;
+    padding: 8px;
+  }
+  
+  .symbol-container.spinning-tile {
+    animation: slotMachineSpin 0.18s linear infinite;
+  }
+  
+  .spinning-column {
+    animation: slotMachineSpin 0.18s linear infinite;
+  }
+}
+
+@media (max-width: 360px) {
+  .symbol-tile {
+    font-size: 1rem;
+  }
+  
+  .symbol {
+    font-size: 1rem;
+  }
+  
+  .symbol-container {
+    aspect-ratio: 1/0.7;
+    padding: 2px;
+    min-height: 30px;
+  }
+  
+  .grid {
+    gap: 2px;
+    padding: 6px;
+  }
+  
+  .symbol-container.spinning-tile {
+    animation: slotMachineSpin 0.2s linear infinite;
+  }
+  
+  .spinning-column {
+    animation: slotMachineSpin 0.2s linear infinite;
+  }
+}

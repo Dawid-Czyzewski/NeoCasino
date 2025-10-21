@@ -1,0 +1,213 @@
+@media (max-width: 768px) {
+  .blackjack-container {
+    padding: 15px;
+    margin: 0 10px;
+    max-width: 100%;
+  }
+  
+  .blackjack-table {
+    padding: 15px;
+  }
+  
+  .table-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .table-header p {
+    font-size: 1rem;
+  }
+  
+  .hand {
+    padding: 12px;
+  }
+  
+  .hand-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .hand-value .value {
+    font-size: 1rem;
+  }
+  
+  .playing-card {
+    width: 60px;
+    height: 84px;
+    margin-left: -10px;
+  }
+  
+  .card-suit-large {
+    font-size: 1.5rem;
+  }
+  
+  .card-rank {
+    font-size: 0.7rem;
+  }
+  
+  .card-suit {
+    font-size: 0.5rem;
+  }
+  
+  .game-message {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  
+  .control-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+  
+  .deal-button {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    min-width: 130px;
+  }
+  
+  .new-game-button {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blackjack-container {
+    padding: 12px;
+    margin: 0 5px;
+  }
+  
+  .blackjack-table {
+    padding: 12px;
+  }
+  
+  .table-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .hand {
+    padding: 10px;
+  }
+  
+  .hand-header h3 {
+    font-size: 1rem;
+  }
+  
+  .hand-value .value {
+    font-size: 0.9rem;
+  }
+  
+  .playing-card {
+    width: 50px;
+    height: 70px;
+    margin-left: -8px;
+  }
+  
+  .card-suit-large {
+    font-size: 1.2rem;
+  }
+  
+  .card-rank {
+    font-size: 0.6rem;
+  }
+  
+  .card-suit {
+    font-size: 0.4rem;
+  }
+  
+  .game-message {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  
+  .control-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    min-width: 80px;
+  }
+  
+  .deal-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    min-width: 110px;
+  }
+  
+  .new-game-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    min-width: 110px;
+  }
+  
+  .game-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .blackjack-container {
+    padding: 10px;
+    margin: 0 2px;
+  }
+  
+  .blackjack-table {
+    padding: 10px;
+  }
+  
+  .table-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hand {
+    padding: 8px;
+  }
+  
+  .hand-header h3 {
+    font-size: 0.9rem;
+  }
+  
+  .hand-value .value {
+    font-size: 0.8rem;
+  }
+  
+  .playing-card {
+    width: 45px;
+    height: 63px;
+    margin-left: -6px;
+  }
+  
+  .card-suit-large {
+    font-size: 1rem;
+  }
+  
+  .card-rank {
+    font-size: 0.5rem;
+  }
+  
+  .card-suit {
+    font-size: 0.3rem;
+  }
+  
+  .game-message {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  
+  .control-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    min-width: 70px;
+  }
+  
+  .deal-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    min-width: 100px;
+  }
+  
+  .new-game-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,25 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .roulette-container {
+    padding: 18px;
+    margin: 0 15px;
+  }
+  
+  .roulette-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .roulette-wheel-container {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .number-text {
+    font-size: 1.1rem;
+  }
+  
+  .spin-button {
+    font-size: 1.3rem;
+    padding: 13px 28px;
+    min-width: 190px;
+  }
+}

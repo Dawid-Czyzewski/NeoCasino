@@ -1,0 +1,27 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .symbol-grid {
+    gap: 9px;
+    padding: 18px;
+  }
+  
+  .symbol-tile {
+    font-size: 2.8rem;
+  }
+  
+  .grid {
+    gap: 9px;
+    padding: 18px;
+  }
+  
+  .symbol {
+    font-size: 2.8rem;
+  }
+  
+  .symbol-container.spinning-tile {
+    animation: slotMachineSpin 0.12s linear infinite;
+  }
+  
+  .spinning-column {
+    animation: slotMachineSpin 0.12s linear infinite;
+  }
+}

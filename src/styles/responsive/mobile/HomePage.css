@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  .home-page {
+    padding: 15px;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home-header p {
+    font-size: 1.1rem;
+  }
+  
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .game-card {
+    padding: 25px;
+  }
+  
+  .game-icon {
+    font-size: 3.5rem;
+  }
+  
+  .game-title {
+    font-size: 1.6rem;
+  }
+  
+  .game-description {
+    font-size: 1rem;
+  }
+  
+  .coming-soon-section {
+    padding: 25px;
+    margin: 30px 0;
+  }
+  
+  .coming-soon-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .coming-soon-section p {
+    font-size: 1.1rem;
+  }
+  
+  .coming-soon-games {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .coming-soon-game {
+    padding: 15px;
+  }
+  
+  .coming-soon-game .game-icon {
+    font-size: 2rem;
+  }
+  
+  .coming-soon-game .game-name {
+    font-size: 0.9rem;
+  }
+  
+  .home-footer p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+  
+  .game-card {
+    padding: 20px;
+  }
+  
+  .game-icon {
+    font-size: 3rem;
+  }
+  
+  .game-title {
+    font-size: 1.4rem;
+  }
+  
+  .coming-soon-section {
+    padding: 20px;
+    margin: 25px 0;
+  }
+  
+  .coming-soon-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .coming-soon-section p {
+    font-size: 1rem;
+  }
+  
+  .coming-soon-games {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .coming-soon-game {
+    padding: 12px;
+  }
+  
+  .coming-soon-game .game-icon {
+    font-size: 1.8rem;
+  }
+  
+  .coming-soon-game .game-name {
+    font-size: 0.8rem;
+  }
+}

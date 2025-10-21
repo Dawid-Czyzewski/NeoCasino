@@ -1,0 +1,41 @@
+export const APP_CONSTANTS = {
+  INITIAL_WALLET: 1000,
+  MIN_BET: 1,
+  MAX_BET: 1000,
+  DEFAULT_BET: 10,
+  SPIN_DURATION: 4000,
+  COLUMN_STOP_DELAY: 600,
+  CONTINUE_SPIN_DURATION: 10000,
+  UPDATE_INTERVAL: 100,
+  SLOW_UPDATE_INTERVAL: 200,
+  
+  GRID_SIZE: 3,
+  SPINNING_TILES_PER_COLUMN: 15,
+  VISIBLE_TILES: 3,
+  
+  STORAGE_KEYS: {
+    WALLET: 'casino_wallet',
+    BET: 'casino_bet',
+    LANGUAGE: 'casino_language'
+  },
+  
+  SUPPORTED_LANGUAGES: ['pl', 'en'],
+  DEFAULT_LANGUAGE: 'pl'
+}
+
+export const CSS_CLASSES = {
+  SPINNING: 'spinning-tile',
+  SPEEDS: {
+    NORMAL: 'normal',
+    SLOW: 'slow',
+    VERY_SLOW: 'very-slow'
+  }
+}
+
+export const ANIMATION_TIMING = {
+  COLUMN_1_STOP: 1500,
+  COLUMN_2_STOP: 2300,
+  COLUMN_3_STOP: 3100,
+  SLOW_DOWN_DELAY: 200,
+  VERY_SLOW_DELAY: 400
+}

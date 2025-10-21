@@ -1,0 +1,38 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-page {
+    padding: 18px;
+  }
+  
+  .home-header h1 {
+    font-size: 2.8rem;
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+  }
+  
+  .games-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .game-card {
+    padding: 28px;
+  }
+  
+  .game-icon {
+    font-size: 3.8rem;
+  }
+  
+  .game-title {
+    font-size: 1.7rem;
+  }
+  
+  .game-description {
+    font-size: 1.05rem;
+  }
+  
+  .home-footer p {
+    font-size: 1.4rem;
+  }
+}

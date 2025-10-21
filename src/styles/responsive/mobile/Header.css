@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  .casino-header h1 {
+    font-size: 2rem;
+  }
+  
+  .wallet-info {
+    gap: 15px;
+  }
+  
+  .wallet {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  
+  .language-select {
+    font-size: 1rem;
+    padding: 10px 14px;
+    min-width: 130px;
+  }
+}

@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .spin-button {
+    font-size: 1.3rem;
+    padding: 12px 30px;
+    min-width: 180px;
+  }
+  
+  .win-message {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+}
