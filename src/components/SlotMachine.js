@@ -21,6 +21,7 @@ const SlotMachine = ({ gameState }) => {
     spinningColumns,
     columnSpeeds,
     spinningTiles,
+    winningPositions,
     startSpinning,
     stopAllColumns,
     finishSpinning,
@@ -59,6 +60,7 @@ const SlotMachine = ({ gameState }) => {
         spinningColumns={spinningColumns}
         columnSpeeds={columnSpeeds}
         spinningTiles={spinningTiles}
+        winningPositions={winningPositions}
       />
       
             <GameControls 

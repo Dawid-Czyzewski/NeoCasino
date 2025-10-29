@@ -8,6 +8,7 @@ export const useSlotMachine = () => {
   const [spinningTiles, setSpinningTiles] = useState(() => 
     GameService.generateSpinningTiles()
   )
+  const [winningPositions, setWinningPositions] = useState([])
   
   const updateIntervalRef = useRef(null)
   const continueSpinningRef = useRef(null)
@@ -23,6 +24,7 @@ export const useSlotMachine = () => {
     setGrid(finalGrid)
     setSpinningColumns([true, true, true])
     setColumnSpeeds(['normal', 'normal', 'normal'])
+    setWinningPositions([])
     updateHiddenTiles(0)
     updateHiddenTiles(1)
     updateHiddenTiles(2)
@@ -80,8 +82,9 @@ export const useSlotMachine = () => {
       updateIntervalRef.current = null
     }
     
-    const winAmount = GameService.checkWins(finalGrid, bet)
-    onWin(winAmount)
+    const winResult = GameService.checkWins(finalGrid, bet)
+    setWinningPositions(winResult.winningPositions)
+    onWin(winResult.totalWin)
     
     continueSpinningRef.current = setInterval(() => {
       updateHiddenTiles(0)
@@ -113,6 +116,7 @@ export const useSlotMachine = () => {
     spinningColumns,
     columnSpeeds,
     spinningTiles,
+    winningPositions,
     startSpinning,
     stopAllColumns,
     finishSpinning,
