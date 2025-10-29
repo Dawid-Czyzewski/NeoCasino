@@ -5,6 +5,16 @@
     "legend": "📖 Legend",
     "language": "Language"
   },
+  "clicker": {
+    "wallet": "Wallet",
+    "power": "Power",
+    "clickToEarn": "Click to Earn!",
+    "clickPower": "Click Power",
+    "level": "Level",
+    "buy": "Buy",
+    "tooExpensive": "Too Expensive",
+    "earnPerClick": "You earn ${{amount}} per click"
+  },
   "home": {
     "title": "🎰 NeoCasino 🎰",
     "subtitle": "Choose your game and start playing!",

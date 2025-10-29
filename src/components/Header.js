@@ -1,6 +1,6 @@
 import { useLocalization } from '../hooks/useLocalization'
 
-const Header = ({ wallet, isSpinning }) => {
+const Header = ({ wallet }) => {
   const { t, changeLanguage, getCurrentLanguage, getAvailableLanguages } = useLocalization()
   const currentLanguage = getCurrentLanguage()
   const availableLanguages = getAvailableLanguages()
@@ -8,7 +8,7 @@ const Header = ({ wallet, isSpinning }) => {
   return (
     <header className="casino-header">
       <div className="wallet-info">
-        <div className="wallet">💰 {t('header.wallet')}: {wallet}</div>
+        <div className="wallet">💰 {t('header.wallet')}: ${wallet.toLocaleString()}</div>
         <div className="language-controls">
           <label>{t('header.language')}: </label>
           <select 

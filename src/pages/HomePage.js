@@ -1,9 +1,19 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useOutletContext } from 'react-router-dom'
 import { useLocalization } from '../hooks/useLocalization'
 
 const HomePage = () => {
   const navigate = useNavigate()
   const { t } = useLocalization()
+  const gameState = useOutletContext()
+  const { 
+    wallet, 
+    clickPower, 
+    upgrade, 
+    handleClick, 
+    getUpgradeCost, 
+    canAffordUpgrade, 
+    buyUpgrade 
+  } = gameState
 
   const games = [
     {
@@ -42,6 +52,53 @@ const HomePage = () => {
       <div className="home-header">
         <h1>{t('home.title')}</h1>
         <p>{t('home.subtitle')}</p>
+      </div>
+
+      <div className="clicker-section">
+        <div className="clicker-stats">
+          <div className="stat-item">
+            <span className="stat-label">💰 {t('clicker.wallet')}:</span>
+            <span className="stat-value">${wallet.toLocaleString()}</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-label">⚡ {t('clicker.power')}:</span>
+            <span className="stat-value">{clickPower}x</span>
+          </div>
+        </div>
+        
+        <div className="clicker-main">
+          <div className="clicker-row">
+            <button 
+              className="click-button"
+              onClick={handleClick}
+            >
+              💰 {t('clicker.clickToEarn')}
+            </button>
+            
+            <div className="upgrade-container">
+              <div className={`upgrade-card ${canAffordUpgrade() ? 'affordable' : 'expensive'}`}>
+                <div className="upgrade-header">
+                  <span className="upgrade-icon">{upgrade.icon}</span>
+                  <span className="upgrade-name">{t(upgrade.nameKey)}</span>
+                </div>
+                <div className="upgrade-info">
+                  <div className="upgrade-level">{t('clicker.level')}: {upgrade.level}</div>
+                  <div className="upgrade-cost">${getUpgradeCost().toLocaleString()}</div>
+                </div>
+                <button 
+                  className={`upgrade-buy-btn ${canAffordUpgrade() ? 'can-buy' : 'cannot-buy'}`}
+                  onClick={buyUpgrade}
+                  disabled={!canAffordUpgrade()}
+                >
+                  {canAffordUpgrade() ? t('clicker.buy') : t('clicker.tooExpensive')}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="click-info">
+            {t('clicker.earnPerClick', { amount: clickPower })}
+          </div>
+        </div>
       </div>
       
       <div className="games-grid">
