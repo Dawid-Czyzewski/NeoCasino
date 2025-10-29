@@ -38,6 +38,10 @@
         "title": "🀄 Poker",
         "description": "Coming Soon - Texas Hold'em poker"
       },
+      "crash": {
+        "title": "💥 Crash",
+        "description": "Watch the multiplier rise and cash out before it crashes!"
+      },
       "comingSoon": "Coming Soon"
     }
   },
@@ -150,5 +154,37 @@
     "pushDesc": "Bet returned",
     "bustPayout": "-100%",
     "bustDesc": "Over 21"
+  },
+  "crash": {
+    "title": "💥 Crash",
+    "currentMultiplier": "Current Multiplier",
+    "startGame": "Start Game",
+    "cashOut": "Cash Out",
+    "crashed": "Crashed!",
+    "crashedAt": "Crashed at",
+    "playAgain": "Play Again",
+    "youWon": "You Won!",
+    "won": "Won",
+    "multiplier": "Multiplier",
+    "recentGames": "Recent Games",
+    "legend": {
+      "title": "Crash Game Rules",
+      "description": "Crash is a high-risk, high-reward game where you watch a multiplier rise logarithmically and decide when to cash out.",
+      "howToPlay": "How to Play:",
+      "step1": "1. Set your bet amount",
+      "step2": "2. Click 'Start Game' to begin (bet is deducted)",
+      "step3": "3. Watch the multiplier rise from 1.00x",
+      "step4": "4. Click 'Cash Out' before it crashes to win",
+      "step5": "5. If you don't cash out in time, you lose your bet",
+      "multiplierGrowth": "Multiplier Growth:",
+      "growthDesc": "The multiplier grows logarithmically - fast at first, then slower as it gets higher",
+      "tips": "Tips:",
+      "tip1": "Higher multipliers = higher risk",
+      "tip2": "The game can crash at any time",
+      "tip3": "Don't be too greedy!",
+      "tip4": "The higher the multiplier, the slower it grows",
+      "payouts": "Payouts:",
+      "payoutDesc": "Your winnings = Bet × Multiplier when you cash out"
+    }
   }
 }

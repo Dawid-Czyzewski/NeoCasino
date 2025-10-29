@@ -1,0 +1,162 @@
+.crash-game {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.crash-display {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  border: 3px solid #FFD700;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.multiplier-display {
+  margin-bottom: 20px;
+}
+
+.multiplier-label {
+  display: block;
+  color: #FFD700;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.multiplier-value {
+  display: block;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #00ff88;
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  font-family: 'Courier New', monospace;
+  transition: all 0.1s ease;
+}
+
+.multiplier-display.running .multiplier-value {
+  animation: multiplierGlow 0.5s ease-in-out infinite alternate;
+}
+
+.multiplier-display.crashed .multiplier-value {
+  color: #ff4757;
+  text-shadow: 0 0 20px rgba(255, 71, 87, 0.5);
+  animation: crashShake 0.5s ease-in-out;
+}
+
+@keyframes multiplierGlow {
+  0% { 
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+    transform: scale(1);
+  }
+  100% { 
+    text-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes crashShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+
+.crash-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.start-button, .cashout-button, .reset-button {
+  background: linear-gradient(145deg, #00ff88, #00cc6a);
+  border: 3px solid #FFD700;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+}
+
+.cashout-button {
+  background: linear-gradient(145deg, #ffd700, #ffb700);
+  animation: cashoutPulse 1s ease-in-out infinite;
+}
+
+@keyframes cashoutPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.reset-button {
+  background: linear-gradient(145deg, #ff6b6b, #ee5a52);
+}
+
+.start-button:hover:not(:disabled), 
+.cashout-button:hover:not(:disabled), 
+.reset-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.start-button:disabled {
+  background: linear-gradient(145deg, #7f8c8d, #95a5a6);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.crash-result, .win-result {
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.crash-message, .win-message {
+  color: #ff4757;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.win-message {
+  color: #00ff88;
+}
+
+.crash-info, .win-amount, .win-multiplier {
+  color: #E0E0E0;
+  font-size: 1.1rem;
+  margin: 5px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .crash-game {
+    padding: 15px;
+  }
+  
+  .crash-display {
+    padding: 20px;
+  }
+  
+  .multiplier-value {
+    font-size: 3rem;
+  }
+  
+  .start-button, .cashout-button, .reset-button {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    min-width: 180px;
+  }
+}

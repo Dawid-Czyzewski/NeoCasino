@@ -5,6 +5,7 @@ import MainLayout from './layouts/MainLayout'
 import HomePage from './pages/HomePage'
 import GamePage from './pages/GamePage'
 import RoulettePage from './pages/RoulettePage'
+import CrashPage from './pages/CrashPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="game/:gameId" element={<GamePage />} />
           <Route path="roulette" element={<RoulettePage />} />
+          <Route path="crash" element={<CrashPage />} />
         </Route>
       </Routes>
     </Router>

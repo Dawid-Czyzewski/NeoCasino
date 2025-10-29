@@ -8,7 +8,7 @@ const Header = ({ wallet }) => {
   return (
     <header className="casino-header">
       <div className="wallet-info">
-        <div className="wallet">💰 {t('header.wallet')}: ${wallet.toLocaleString()}</div>
+        <div className="wallet">💰 {t('header.wallet')}: ${wallet.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 })}</div>
         <div className="language-controls">
           <label>{t('header.language')}: </label>
           <select 

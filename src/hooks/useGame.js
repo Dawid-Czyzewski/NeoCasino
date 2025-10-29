@@ -6,6 +6,7 @@ const STORAGE_KEYS = {
   SLOT_BET: 'casino_slot_bet',
   ROULETTE_BET: 'casino_roulette_bet',
   BLACKJACK_BET: 'casino_blackjack_bet',
+  CRASH_BET: 'casino_crash_bet',
   CLICK_POWER: 'casino_click_power',
   TOTAL_CLICKS: 'casino_total_clicks',
   UPGRADES: 'casino_upgrades'
@@ -26,6 +27,7 @@ const INITIAL_STATE = {
   slotBet: 10,
   rouletteBet: 10,
   blackjackBet: 10,
+  crashBet: 10,
   isSpinning: false,
   lastWin: 0,
   clickPower: 1,
@@ -44,6 +46,9 @@ export const useGame = () => {
   )
   const [blackjackBet, setBlackjackBet] = useState(() => 
     LocalStorageService.getItem(STORAGE_KEYS.BLACKJACK_BET, INITIAL_STATE.blackjackBet)
+  )
+  const [crashBet, setCrashBet] = useState(() => 
+    LocalStorageService.getItem(STORAGE_KEYS.CRASH_BET, INITIAL_STATE.crashBet)
   )
   const [isSpinning, setIsSpinning] = useState(INITIAL_STATE.isSpinning)
   const [lastWin, setLastWin] = useState(INITIAL_STATE.lastWin)
@@ -81,6 +86,12 @@ export const useGame = () => {
     const validBet = Math.max(1, Math.min(newBet, wallet))
     setBlackjackBet(validBet)
     LocalStorageService.setItem(STORAGE_KEYS.BLACKJACK_BET, validBet)
+  }, [wallet])
+
+  const updateCrashBet = useCallback((newBet) => {
+    const validBet = Math.max(1, Math.min(newBet, wallet))
+    setCrashBet(validBet)
+    LocalStorageService.setItem(STORAGE_KEYS.CRASH_BET, validBet)
   }, [wallet])
 
   const handleClick = useCallback(() => {
@@ -126,6 +137,7 @@ export const useGame = () => {
     setSlotBet(INITIAL_STATE.slotBet)
     setRouletteBet(INITIAL_STATE.rouletteBet)
     setBlackjackBet(INITIAL_STATE.blackjackBet)
+    setCrashBet(INITIAL_STATE.crashBet)
     setLastWin(INITIAL_STATE.lastWin)
     setIsSpinning(INITIAL_STATE.isSpinning)
     setClickPower(INITIAL_STATE.clickPower)
@@ -135,6 +147,7 @@ export const useGame = () => {
     LocalStorageService.setItem(STORAGE_KEYS.SLOT_BET, INITIAL_STATE.slotBet)
     LocalStorageService.setItem(STORAGE_KEYS.ROULETTE_BET, INITIAL_STATE.rouletteBet)
     LocalStorageService.setItem(STORAGE_KEYS.BLACKJACK_BET, INITIAL_STATE.blackjackBet)
+    LocalStorageService.setItem(STORAGE_KEYS.CRASH_BET, INITIAL_STATE.crashBet)
     LocalStorageService.setItem(STORAGE_KEYS.CLICK_POWER, INITIAL_STATE.clickPower)
     LocalStorageService.setItem(STORAGE_KEYS.UPGRADES, INITIAL_STATE.upgrade)
   }, [])
@@ -151,11 +164,16 @@ export const useGame = () => {
     return !isSpinning && wallet >= blackjackBet
   }, [isSpinning, wallet, blackjackBet])
 
+  const canStartCrash = useCallback(() => {
+    return !isSpinning && wallet >= crashBet
+  }, [isSpinning, wallet, crashBet])
+
   return {
     wallet,
     slotBet,
     rouletteBet,
     blackjackBet,
+    crashBet,
     isSpinning,
     lastWin,
     clickPower,
@@ -164,12 +182,14 @@ export const useGame = () => {
     setSlotBet: updateSlotBet,
     setRouletteBet: updateRouletteBet,
     setBlackjackBet: updateBlackjackBet,
+    setCrashBet: updateCrashBet,
     setIsSpinning,
     setLastWin,
     resetGame,
     canSpinSlot: canSpinSlot(),
     canSpinRoulette: canSpinRoulette(),
     canPlayBlackjack: canPlayBlackjack(),
+    canStartCrash: canStartCrash(),
     handleClick,
     getUpgradeCost,
     canAffordUpgrade,

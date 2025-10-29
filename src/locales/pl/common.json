@@ -38,6 +38,10 @@
         "title": "🀄 Poker",
         "description": "Wkrótce - Texas Hold'em poker"
       },
+      "crash": {
+        "title": "💥 Crash",
+        "description": "Obserwuj jak mnożnik rośnie i wypłać zanim się rozbije!"
+      },
       "comingSoon": "Wkrótce"
     }
   },
@@ -150,5 +154,37 @@
     "pushDesc": "Zwrot stawki",
     "bustPayout": "-100%",
     "bustDesc": "Przekroczenie 21"
+  },
+  "crash": {
+    "title": "💥 Crash",
+    "currentMultiplier": "Aktualny Mnożnik",
+    "startGame": "Rozpocznij Grę",
+    "cashOut": "Wypłać",
+    "crashed": "Rozbity!",
+    "crashedAt": "Rozbity na",
+    "playAgain": "Zagraj Ponownie",
+    "youWon": "Wygrałeś!",
+    "won": "Wygrane",
+    "multiplier": "Mnożnik",
+    "recentGames": "Ostatnie Gry",
+    "legend": {
+      "title": "Zasady Gry Crash",
+      "description": "Crash to gra wysokiego ryzyka i wysokiej nagrody, gdzie obserwujesz rosnący mnożnik logarytmicznie i decydujesz kiedy wypłacić.",
+      "howToPlay": "Jak Grać:",
+      "step1": "1. Ustaw kwotę stawki",
+      "step2": "2. Kliknij 'Rozpocznij Grę' aby zacząć (stawka jest pobierana)",
+      "step3": "3. Obserwuj jak mnożnik rośnie od 1.00x",
+      "step4": "4. Kliknij 'Wypłać' zanim się rozbije aby wygrać",
+      "step5": "5. Jeśli nie wypłacisz na czas, tracisz stawkę",
+      "multiplierGrowth": "Wzrost Mnożnika:",
+      "growthDesc": "Mnożnik rośnie logarytmicznie - szybko na początku, potem wolniej im wyżej",
+      "tips": "Wskazówki:",
+      "tip1": "Wyższe mnożniki = wyższe ryzyko",
+      "tip2": "Gra może się rozbić w każdej chwili",
+      "tip3": "Nie bądź zbyt chciwy!",
+      "tip4": "Im wyższy mnożnik, tym wolniej rośnie",
+      "payouts": "Wypłaty:",
+      "payoutDesc": "Twoje wygrane = Stawka × Mnożnik gdy wypłacasz"
+    }
   }
 }

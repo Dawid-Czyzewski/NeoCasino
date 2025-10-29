@@ -38,6 +38,14 @@ const HomePage = () => {
       icon: '🎲',
       path: '/roulette',
       comingSoon: false
+    },
+    {
+      id: 'crash',
+      titleKey: 'crash.title',
+      descriptionKey: 'crash.description',
+      icon: '💥',
+      path: '/crash',
+      comingSoon: false
     }
   ]
 
