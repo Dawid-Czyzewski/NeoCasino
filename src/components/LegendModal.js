@@ -105,6 +105,32 @@ const LegendModal = ({ isOpen, onClose, gameType = 'slotMachine' }) => {
     )
   }
 
+  const renderScratchLegend = () => {
+    return (
+      <div className="scratch-legend">
+        <div className="legend-description">
+          <p>{t('scratch.legend.description')}</p>
+        </div>
+
+        <div className="how-to-play">
+          <h3>{t('scratch.legend.howToPlay')}</h3>
+          <ul className="steps-list">
+            <li>{t('scratch.legend.step1')}</li>
+            <li>{t('scratch.legend.step2')}</li>
+            <li>{t('scratch.legend.step3')}</li>
+            <li>{t('scratch.legend.step4')}</li>
+          </ul>
+        </div>
+
+        <div className="payouts-section">
+          <h3>{t('crash.legend.payouts')}</h3>
+          <p>{t('scratch.legend.winFormula')}</p>
+          <p className="tip-text">{t('scratch.legend.winningCondition')}</p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -121,6 +147,7 @@ const LegendModal = ({ isOpen, onClose, gameType = 'slotMachine' }) => {
         <div className="legend-content">
           {gameType === 'slotMachine' && renderSlotMachineLegend()}
           {gameType === 'crash' && renderCrashLegend()}
+          {gameType === 'scratch' && renderScratchLegend()}
         </div>
       </div>
     </div>

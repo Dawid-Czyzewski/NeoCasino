@@ -8,6 +8,7 @@
 @import './components/LegendModal.css';
 @import './components/Roulette.css';
 @import './components/Blackjack.css';
+@import './components/ScratchCards.css';
 @import './pages/HomePage.css';
 @import './pages/GamePage.css';
 @import './responsive/tablet/index.css';

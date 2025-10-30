@@ -42,6 +42,10 @@
         "title": "💥 Crash",
         "description": "Watch the multiplier rise and cash out before it crashes!"
       },
+      "scratch": {
+        "title": "🎫 Scratch Cards",
+        "description": "Reveal 3 symbols and win prizes!"
+      },
       "comingSoon": "Coming Soon"
     }
   },
@@ -185,6 +189,26 @@
       "tip4": "The higher the multiplier, the slower it grows",
       "payouts": "Payouts:",
       "payoutDesc": "Your winnings = Bet × Multiplier when you cash out"
+    }
+  },
+  "scratch": {
+    "title": "🎫 Scratch Cards",
+    "scratchMe": "REVEAL!",
+    "buyCard": "Buy Card",
+    "youWon": "YOU WON",
+    "betterLuck": "Better Luck Next Time",
+    "newCard": "New Card",
+    "winningSymbols": "Winning Symbols",
+    "legend": {
+      "title": "Scratch Cards Game Rules",
+      "description": "Scratch Cards is a simple and exciting game where you need to get 3 matching symbols to win!",
+      "howToPlay": "How to Play:",
+      "step1": "1. Set your bet amount",
+      "step2": "2. Click 'Buy Card'",
+      "step3": "3. Reveal all 3 symbols",
+      "step4": "4. To win you need to get 3 matching symbols!",
+      "winFormula": "Win = Bet × 10",
+      "winningCondition": "You need 3 matching symbols to win!"
     }
   }
 }

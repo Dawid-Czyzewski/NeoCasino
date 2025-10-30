@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+  .scratch-cards {
+    padding: 15px;
+  }
+
+  .scratch-card {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .scratch-symbol {
+    width: 120px;
+    height: 120px;
+  }
+
+  .symbol-revealed {
+    font-size: 4rem;
+  }
+
+  .scratch-cover-icon {
+    font-size: 2.5rem;
+  }
+
+  .scratch-cover .scratch-text {
+    font-size: 0.75rem;
+  }
+
+  .scratch-controls {
+    padding: 6px;
+  }
+
+  .buy-card-button {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .scratch-symbol {
+    width: 100px;
+    height: 100px;
+  }
+
+  .symbol-revealed {
+    font-size: 3rem;
+  }
+
+  .scratch-cover-icon {
+    font-size: 2rem;
+  }
+
+  .scratch-cover .scratch-text {
+    font-size: 0.65rem;
+  }
+
+  .scratch-card {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .buy-card-button {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}

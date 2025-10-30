@@ -42,6 +42,10 @@
         "title": "💥 Crash",
         "description": "Obserwuj jak mnożnik rośnie i wypłać zanim się rozbije!"
       },
+      "scratch": {
+        "title": "🎫 Zdrapki",
+        "description": "Odkryj 3 symbole i wygraj nagrody!"
+      },
       "comingSoon": "Wkrótce"
     }
   },
@@ -185,6 +189,26 @@
       "tip4": "Im wyższy mnożnik, tym wolniej rośnie",
       "payouts": "Wypłaty:",
       "payoutDesc": "Twoje wygrane = Stawka × Mnożnik gdy wypłacasz"
+    }
+  },
+  "scratch": {
+    "title": "🎫 Zdrapki",
+    "scratchMe": "ODKRYJ!",
+    "buyCard": "Kup Zdrapkę",
+    "youWon": "WYGRANA",
+    "betterLuck": "Spróbuj ponownie",
+    "newCard": "Nowa Zdrapka",
+    "winningSymbols": "Symbole Wygrające",
+    "legend": {
+      "title": "Zasady Gry w Zdrapki",
+      "description": "Zdrapki to prosta i ekscytująca gra, gdzie musisz trafić na 3 jednakowe symbole aby wygrać!",
+      "howToPlay": "Jak Grać:",
+      "step1": "1. Ustaw kwotę stawki",
+      "step2": "2. Kliknij 'Kup Zdrapkę'",
+      "step3": "3. Odkryj wszystkie 3 symbole",
+      "step4": "4. Aby wygrać musisz trafić na 3 jednakowe symbole!",
+      "winFormula": "Wygrana = Stawka × 10",
+      "winningCondition": "Musisz mieć 3 jednakowe symbole aby wygrać!"
     }
   }
 }

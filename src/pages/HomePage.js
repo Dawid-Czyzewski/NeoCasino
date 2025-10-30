@@ -46,6 +46,14 @@ const HomePage = () => {
       icon: '💥',
       path: '/crash',
       comingSoon: false
+    },
+    {
+      id: 'scratch',
+      titleKey: 'scratch.title',
+      descriptionKey: 'scratch.description',
+      icon: '🎫',
+      path: '/scratch',
+      comingSoon: false
     }
   ]
 
