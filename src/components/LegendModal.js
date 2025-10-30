@@ -119,13 +119,15 @@ const LegendModal = ({ isOpen, onClose, gameType = 'slotMachine' }) => {
             <li>{t('scratch.legend.step2')}</li>
             <li>{t('scratch.legend.step3')}</li>
             <li>{t('scratch.legend.step4')}</li>
+            <li>{t('scratch.legend.step5')}</li>
           </ul>
         </div>
 
         <div className="payouts-section">
           <h3>{t('crash.legend.payouts')}</h3>
-          <p>{t('scratch.legend.winFormula')}</p>
+          <p><strong>{t('scratch.legend.winFormula')}</strong></p>
           <p className="tip-text">{t('scratch.legend.winningCondition')}</p>
+          <p className="tip-text">{t('scratch.legend.scratchTip')}</p>
         </div>
       </div>
     )

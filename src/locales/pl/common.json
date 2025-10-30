@@ -204,11 +204,13 @@
       "description": "Zdrapki to prosta i ekscytująca gra, gdzie musisz trafić na 3 jednakowe symbole aby wygrać!",
       "howToPlay": "Jak Grać:",
       "step1": "1. Ustaw kwotę stawki",
-      "step2": "2. Kliknij 'Kup Zdrapkę'",
-      "step3": "3. Odkryj wszystkie 3 symbole",
-      "step4": "4. Aby wygrać musisz trafić na 3 jednakowe symbole!",
+      "step2": "2. Kliknij 'Kup Zdrapkę' aby zakupić zdrapkę",
+      "step3": "3. Przeciągnij myszką lub palcem po szarym overlay, aby go zdrapać",
+      "step4": "4. Gdy zdrapiesz 70% pola, automatycznie odsłania się ono całkowicie",
+      "step5": "5. Jeśli wszystkie 3 symbole są jednakowe, wygrywasz!",
       "winFormula": "Wygrana = Stawka × 10",
-      "winningCondition": "Musisz mieć 3 jednakowe symbole aby wygrać!"
+      "winningCondition": "Musisz mieć 3 jednakowe symbole aby wygrać!",
+      "scratchTip": "💡 Wskazówka: Zdrap każdy kafelek, aby odkryć ukryte pod spodem symbole!"
     }
   }
 }

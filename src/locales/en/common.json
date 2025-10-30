@@ -204,11 +204,13 @@
       "description": "Scratch Cards is a simple and exciting game where you need to get 3 matching symbols to win!",
       "howToPlay": "How to Play:",
       "step1": "1. Set your bet amount",
-      "step2": "2. Click 'Buy Card'",
-      "step3": "3. Reveal all 3 symbols",
-      "step4": "4. To win you need to get 3 matching symbols!",
+      "step2": "2. Click 'Buy Card' to purchase a scratch card",
+      "step3": "3. Drag your mouse or finger across the gray overlay to scratch it off",
+      "step4": "4. When you scratch 70% of a tile, it automatically reveals completely",
+      "step5": "5. If all 3 symbols match, you win!",
       "winFormula": "Win = Bet × 10",
-      "winningCondition": "You need 3 matching symbols to win!"
+      "winningCondition": "You need 3 matching symbols to win!",
+      "scratchTip": "💡 Tip: Scratch each tile to reveal the hidden symbols underneath!"
     }
   }
 }

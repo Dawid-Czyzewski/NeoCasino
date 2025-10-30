@@ -33,4 +33,27 @@
   .symbol-multiplier {
     font-size: 1rem;
   }
+
+  .crash-legend {
+    gap: 20px;
+  }
+  
+  .how-to-play, .multiplier-growth, .tips-section, .payouts-section {
+    padding: 15px;
+  }
+
+  .scratch-legend {
+    gap: 20px;
+  }
+  
+  .scratch-legend .how-to-play, 
+  .scratch-legend .winning-symbols-section, 
+  .scratch-legend .payouts-section {
+    padding: 15px;
+  }
+
+  .symbol-item-large {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+  }
 }
