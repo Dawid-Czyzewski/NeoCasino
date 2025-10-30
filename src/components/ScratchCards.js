@@ -29,9 +29,7 @@ const ScratchCards = ({ gameState }) => {
     
     setSymbols(newSymbols)
     setIsScratched(false)
-    setIsScratching(false)
     setWinAmount(0)
-    setScratchedAreas([0, 0, 0])
     setHasBoughtCard(true)
     setIsDragging(false)
     setWallet(wallet - scratchBet)
@@ -40,7 +38,11 @@ const ScratchCards = ({ gameState }) => {
       if (canvasRef.current) {
         const ctx = canvasRef.current.getContext('2d')
         const canvas = canvasRef.current
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        canvas.width = 150
+        canvas.height = 150
+        ctx.globalCompositeOperation = 'source-over'
+        ctx.fillStyle = '#b0b0b0'
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
         
         canvas.dataset.symbol = ''
       }
@@ -143,9 +145,7 @@ const ScratchCards = ({ gameState }) => {
   const handleNewCard = useCallback(() => {
     setSymbols(['?', '?', '?'])
     setIsScratched(false)
-    setIsScratching(false)
     setWinAmount(0)
-    setScratchedAreas([0, 0, 0])
     setHasBoughtCard(false)
     setIsDragging(false)
     
@@ -154,7 +154,12 @@ const ScratchCards = ({ gameState }) => {
         const ctx = canvasRef.current.getContext('2d')
         const canvas = canvasRef.current
         
-        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        // Recreate opaque cover
+        canvas.width = 150
+        canvas.height = 150
+        ctx.globalCompositeOperation = 'source-over'
+        ctx.fillStyle = '#b0b0b0'
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
         
         canvas.dataset.symbol = ''
       }
@@ -163,6 +168,26 @@ const ScratchCards = ({ gameState }) => {
       }
     })
   }, [scratchRefs, canvasRefs])
+
+  const handleClickReveal = useCallback((index) => {
+    const canvas = canvasRefs[index].current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    ctx.globalCompositeOperation = 'destination-out'
+    ctx.beginPath()
+    ctx.rect(0, 0, canvas.width, canvas.height)
+    ctx.fill()
+
+    const overlay = scratchRefs[index].current
+    if (overlay) {
+      const icon = overlay.querySelector('.scratch-cover-icon')
+      const text = overlay.querySelector('.scratch-text')
+      if (icon) icon.style.display = 'none'
+      if (text) text.style.display = 'none'
+      overlay.style.pointerEvents = 'auto'
+      overlay.style.background = 'transparent'
+    }
+  }, [canvasRefs, scratchRefs])
   
   const handleButtonClick = useCallback(() => {
     handleBuyCard()
@@ -176,6 +201,10 @@ const ScratchCards = ({ gameState }) => {
         
         canvas.width = 150
         canvas.height = 150
+
+        ctx.globalCompositeOperation = 'source-over'
+        ctx.fillStyle = '#b0b0b0'
+        ctx.fillRect(0, 0, canvas.width, canvas.height)
       }
     })
   }, [])
@@ -230,6 +259,7 @@ const ScratchCards = ({ gameState }) => {
                           onMouseMove={(e) => handleMouseMove(e, index)}
                           onMouseUp={handleMouseUp}
                           onMouseLeave={handleMouseUp}
+                          onClick={() => handleClickReveal(index)}
                           style={{ cursor: hasBoughtCard ? 'pointer' : 'not-allowed' }}
                         />
                         <div 
